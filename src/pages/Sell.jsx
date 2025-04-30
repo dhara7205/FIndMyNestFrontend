@@ -42,7 +42,7 @@ const Sell = () => {
     try {
       const token = localStorage.getItem('token'); // Assuming you store token locally after login
 
-      const res = await fetch(`${import.meta.env.VITE_API_BASE}/properties/create`, {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE}/api/properties/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
